@@ -16,10 +16,40 @@ body {
 }
 
 .modal {
+  display: flex;
+  gap: 10px;
   background: white;
+  padding: 15px;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+
+} 
+.header {
+  text-align: center;
+  color: black;
+  font-size: medium;
+  font-weight: bolder;
 }
 
 .icon {
@@ -31,6 +61,7 @@ body {
   height: 42px;
   border-radius: 50%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -60,6 +91,7 @@ button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  margin-right: 5px;
 }
 
 button.cancel {
